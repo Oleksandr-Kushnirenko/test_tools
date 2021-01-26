@@ -1,0 +1,70 @@
+.slider {
+    margin: 0 auto;
+    margin-top: 20px;
+    max-height: 280px;
+    max-width: 1110px;
+    position: relative;
+    display: flex;
+    background: url("../../img/slider/bg_black.png") center center/cover no-repeat;
+    &__img-red {
+        position: absolute;
+        margin: 0 0 0 auto;
+        height: 280px;
+        z-index: 2;
+        right: 0;
+    } 
+    &__title {
+        display: flex;
+        position: absolute;
+        z-index: 3;
+        justify-content: flex-end;
+        margin: 27px auto auto 61px;
+        color: #FFFFFF;
+        font-size: 30px;
+        width: 485px;
+        span {
+            color: #EC1B24;
+            text-transform: uppercase;
+        }
+    }
+    &__subtitle {
+        display: flex;
+        position: absolute;
+        z-index: 3;
+        justify-content: flex-end;
+        margin: 127px auto auto 61px;
+        color: #FFFFFF;
+        font-size: 14px;
+        width: 286px;
+        font-weight: 400;
+    }
+    &__btn {
+        display: flex;
+        position: absolute;
+        z-index: 3;
+        width: 160px;
+        height: 50px;
+        justify-content: flex-end;
+        margin: 195px auto auto 61px;
+        background: linear-gradient(0deg, rgba(4, 15, 15, 0.25), rgba(4, 15, 15, 0.25)), url(black-concrete-wall.jpg);
+        border: 2px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 3px;
+        cursor: pointer;
+        &__text {
+            width: 100%;
+            display: flex;
+            padding: 13px 49px 13px 49px;
+            font-size: 14px;
+            color: #FFFFFF;
+        }
+    }
+    &__img-bosch {
+        display: flex;
+        position: relative;
+        margin: 40px 172px 0 auto;
+        height: 240px;
+        z-index: 5;
+        justify-content: flex-end; 
+    }
+}
