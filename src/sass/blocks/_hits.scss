@@ -1,37 +1,33 @@
 .hits {
-    margin: 0 auto;
-    min-height: 510px;
-    margin-top: 50px;
+    margin: 50px auto 0 auto;
+    /* min-height: 510px; */
     position: relative;
     display: flex;
     &__title {
         margin: 0 auto;
         display: flex;
         font-size: 24px;
+        font-weight: 700;
         justify-content: center;
     }
-    &__link {
-        display: flex;
-        margin: 30px 0 30px auto;
-        justify-content: flex-end;
-        font-size: 14px;
-        color: #135DBC;
-        text-decoration-line: underline;
-    }
 }
+
 .carousel {
     display: flex;
     &__inner {
-        width: 100%;  
-        display: flex;
-        justify-content: space-between;
+        position: relative;
+        margin: 0 auto;
+        width: auto; 
         &__item {
+            /* margin: 0 20px; */
+            margin-right: 0;
             margin-top: 30px;
-            width: 255px;
+            max-width: 255px;
             min-height: 400px;
             border: 1px solid #E6E7E7;
             border-radius: 3px;
             padding: 20px;
+            margin-left: 0px;
             &-img {
                 position: absolute;
                 display: flex;
@@ -57,6 +53,7 @@
                     font-size: 14px;
                     line-height: 20px;
                     color: #040F0F;
+                    max-width: 215px;
                 }
                 .price-amount {
                     display: flex;
@@ -115,20 +112,27 @@
             }
         }
     }
+    &__link {
+        display: flex;
+        margin: 30px 0 30px auto;
+        justify-content: flex-end;
+        font-size: 14px;
+        color: #135DBC;
+        text-decoration-line: underline;
+    }
     .slick-prev, .slick-next {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: -66px;
-        border: none;
-        background-color: #fff; 
-        img {
-            width: 31px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -80px;
+            border: none;
+            border-radius: 100%; 
+            width: 50px;
             height: 50px;
-        }
+            background: #F3F7FC;
     }
     .slick-next {
-        right: -66px;
+        right: -60px;
         left: auto;
     }
 }
