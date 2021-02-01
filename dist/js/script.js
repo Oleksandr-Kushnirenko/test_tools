@@ -7,6 +7,18 @@ $(document).ready(function(){
         prevArrow: '<button type="button" class="slick-prev"><img src="../icons/carus-left.svg"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="../icons/carus-right.svg"></button>',
     });
+
+    $('.brands__items').slick({
+        speed: 1200,
+        infinite: true, 
+        slidesToShow: 6,
+        rows: 2,
+        slidesToScroll: 1, 
+        prevArrow: '<button type="button" class="slick-prev"><img src="../icons/carus-left.svg"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="../icons/carus-right.svg"></button>',
+    });
+
+
   });
  
 
